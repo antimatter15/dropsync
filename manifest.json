@@ -1,0 +1,26 @@
+{
+  "name": "dropsync",
+  "version": "1.5",
+  "description": "Chrome OS Dropbox Sync.",
+  "permissions": [
+    "tabs",
+    "http://*.dropbox.com/",
+    "https://*.dropbox.com/",
+    "unlimitedStorage",
+    "fileBrowserHandler",
+    "fileBrowserPrivate",
+    "mediaPlayerPrivate",
+    "unlimitedStorage",
+    "notifications"
+  ],
+  "browser_action": {
+    "default_icon": "32.png",
+    "default_title": "Sync Dropbox",
+    "default_popup": "sync.html"
+  },
+  "icons": {
+    "32": "32.png",
+    "64": "64.png",
+    "128": "dropsync.png"
+  }
+}

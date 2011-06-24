@@ -1,0 +1,32 @@
+<script>
+	window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder;
+
+	Blob.prototype.slice = Blob.prototype.slice || function(start, length) {
+		return this.webkitSlice(start, start + length);
+	}
+	
+</script>
+<style>
+  * {
+    font-family: sans-serif;
+    font-size: 11px;
+  }
+  body {
+    width: 300px;
+  }
+  
+  #log div {
+    padding: 3px;
+    margin: 3px;
+    border-radius: 3px;
+    background-color: #E5FFF8;
+  }
+</style>
+<script src="md5.js"></script>
+<script src="sha1.js"></script>
+<script src="files.js"></script>
+<script src="keys.js"></script>
+<script src="oauth.js"></script>
+<script src="modern_dropbox.js"></script>
+<script src="dropbox.js"></script>
+<div id="log"></div>
